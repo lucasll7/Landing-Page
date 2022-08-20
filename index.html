@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--estilo css-->
+    <link rel="stylesheet" href="css/estilo.css">
+    <!--icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <title>Poliesportivo</title>
+</head>
+<body>
+    <header id="descricao-evento">
+        <div id="aviso-evento">
+            <h2 id="titulo-evento">Poliesportivo Antunes Coimbra</h2>
+            <p id="texto-descritivo">
+                Um final de semana com torneios esportivos
+            </p>
+            <p>Data do evento:</p>
+            <p id="data-evento">
+                Dias 28 e 29 de agosto de 2022 a partir das 10:00 da manhã
+            </p>
+        </div>
+        <div id="formulario">
+            <p id="chamada-form">Preencha o formulário para receber os detalhes do evento</p>
+            <form>
+                <div class="form-group">
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" placeholder="Digite seu nome...">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" placeholder="Qual é seu melhor e-mail ?">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Whatsapp</label>
+                    <input type="text" name="phone" placeholder="Digite seu whatsapp...">
+                </div>
+                <div class="form-group">
+                    <label for="interest">Esporte que deseja acompanhar</label>
+                    <select name="interest">
+                        <option value="" desabled selected>Selecione</option>
+                        <option value="futebol">Futebol</option>
+                        <option value="voley">Vôley</option>
+                        <option value="basquete">Basquete</option>
+                    </select>
+                </div>
+                <input type="submit" class="btn" value="Quero me inscrever">
+            </form>
+        </div>
+    </header>
+    <section id="descricao-esportes">
+        <h2>O que vai acontecer:</h2>
+        <div class="esportes">
+            <div class="modalidade">
+                <div id="futebol" class="modalidade-img"></div>
+                    <p>Paragrafo com os detalhes da modalidade</p>
+            </div>
+            <div class="modalidade">
+                <div id="voley" class="modalidade-img"></div>
+                    <p>Paragrafo com os detalhes da modalidade</p>
+            </div>
+            <div class="modalidade">
+                <div id="basquete" class="modalidade-img"></div>
+                    <p>Paragrafo com os detalhes da modalidade</p>
+            </div>
+        </div>
+    </section>
+    <!--local-->
+    <section id="local">
+        <div id="endereco">
+            <i class="bi bi-geo-alt-fill"></i>
+            <div id="detalhes-endereco">
+                <p>Rua Rei Arthur Antunes Coimbra, 10</p>
+                <p>Bairro Quintino</p>
+                <p>Abertura as 9:30</p>
+            </div>
+        </div>
+        <div id="detalhe-local">
+            <h3>Local de destaque</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae facilis
+                expedita commodi facere perspiciatis accusamus natus esse magni eaque 
+                libero magnam possimus, aliquam repellendus sed. At, perspiciatis repellat. Libero, dolores
+            </p>
+        </div>
+    </section>
+    <!--detalhes do evento-->
+    <section id="detalhes">
+        <h2>Conheça os ambientes do poliesportivo</h2>
+        <div class="detalhe" id="detalhe-1">
+            <img src="imagens/futebol.jpg" alt="jogo de futebol">
+            <div class="detalhes-descricao">
+                <h3>Campo de futebol</h3>
+                <ul>
+                    <li>Campo gramado</li>
+                    <li>Arquibancada</li>
+                    <li>Vestiários</li>
+                    <li>Lanchonete</li>
+                </ul>
+            </div>
+        </div>
+        <div class="detalhe" id="detalhe-2">
+            <div class="detalhes-descricao">
+                <h3>Quadra de vôley</h3>
+                <ul>
+                    <li>Quadra aberta</li>
+                    <li>Arquibancada</li>
+                    <li>Vestiários</li>
+                    <li>Lanchonete</li>
+                </ul>
+            </div>
+            <img src="imagens/voley.JPG" alt="jogo de voley">
+        </div>
+        <div class="detalhe" id="detalhe-3">
+            <img src="imagens/basquete.jpg" alt="jogo de basquete">
+            <div class="detalhes-descricao">
+                <h3>Quadra de basquete</h3>
+                <ul>
+                    <li>Quadra aberta</li>
+                    <li>Arquibancada</li>
+                    <li>Vestiários</li>
+                    <li>Lanchonete</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!--cta-->
+    <section id="cta">
+        <h3>Gostou? então se inscreva:</h3>
+        <button class="btn">Solicitar inscrção</button>
+    </section>
+    <!--footer-->
+    <footer>
+        <h3>Poliesportivo Antunes Coimbra</h3>
+        <p>O melhor poliesportivo do Brasil</p>
+        <p>Entre em contato:</p>
+        <ul>
+            <li>
+                <a href="#" onclick="phone()"><i class="bi bi-whatsapp"></i></a>
+                <a href="#" onclick="email()"><i class="bi bi-envelope"></i></a>
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.linkedin.com/in/lucas-leonardo-lino-006885238/"><i class="bi bi-linkedin"></i></a>
+                <a href="https://github.com/lucasll7"><i class="bi bi-github"></i></a>
+            </li>
+            
+        </ul>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
